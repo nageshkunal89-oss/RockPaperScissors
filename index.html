@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Interactive Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- बैकग्राउंड में तैरते हुए चमकदार कण -->
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- 3D इंटरैक्टिव गेम कार्ड -->
+    <div class="container" id="gameCard">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div id="statusText" class="status">अपना हथियार चुनें!</div>
+
+        <div class="hands">
+            <div class="hand-box">
+                <p>PLAYER</p>
+                <div id="playerHand" class="emoji float-anim">✊</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="hand-box">
+                <p>COMPUTER</p>
+                <div id="computerHand" class="emoji float-anim">✊</div>
+            </div>
+        </div>
+
+        <div class="points">
+            Won: <span id="won">0</span> | 
+            Lost: <span id="lost">0</span> | 
+            Draw: <span id="draw">0</span>
+        </div>
+
+        <div class="options">
+            <button onclick="play('stone')">✊ STONE</button>
+            <button onclick="play('paper')">✋ PAPER</button>
+            <button onclick="play('scissors')">✌️ SCISSORS</button>
+        </div>
+
+        <!-- आपका YouTube चैनल लोगो और नाम -->
+        <div style="margin-top: 25px; display: flex; align-items: center; justify-content: center; gap: 12px; background: rgba(0, 0, 0, 0.35); padding: 8px 18px; border-radius: 50px; border: 1px solid rgba(0, 242, 254, 0.25); width: fit-content; margin-left: auto; margin-right: auto;">
+            <img src="logo.jpg" alt="VibeVerse Ai" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid #00f2fe;">
+            <div style="text-align: left; line-height: 1.2;">
+                <div style="font-size: 14px; font-weight: 700; color: #ffffff;">VibeVerse Ai</div>
+                <div style="font-size: 11px; color: #00f2fe;">@VibeVerseAi-m7d</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
